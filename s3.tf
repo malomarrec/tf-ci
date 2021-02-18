@@ -44,3 +44,13 @@ resource "aws_s3_bucket" "b2" {
     Environment = "Dev"
   }
 }
+
+resource "aws_s3_bucket" "b3" {
+  bucket = "my-tf-test-bucket-efrfw-132454231-3"
+  acl    = "private"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
